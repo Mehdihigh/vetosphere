@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --background-color: #fafafa;
+    --base-color:"#DAB6FF";
+    --base-linear-gradient: linear-gradient(90deg, rgba(85,121,133,1) 0%, rgba(63,103,123,1) 36%, rgba(61,102,122,1) 63%, rgba(59,100,121,1) 74%, rgba(37,83,110,1) 98%);
+    --shadow-base-color: #DAB6FF;
+    --hover-color:#c6d7db;
+    --text-color:#111E20;
+    --text-color-red: #CB134D;
+    --button-color-red: #d3113e;
+    --hover-button-color-red: #8d0f2e;
+    --button-color-green: #069614;
+    --hover-button-color-green: #0c801e;
+    --button-default-color:#DAB6FF;
+    --hover-button-default-color: rgb(38, 82, 89);
+    --container-color:#DAB6FF; /* C6D7DB */
+    --container-linear-gradient:radial-gradient(circle, rgba(198, 215, 219, 1) 0%, rgba(198, 215, 219, 0.8) 50%, rgba(198, 215, 219, 0.5) 100%);
+    --white-color: #ffffff;
+    --white-color-trasparent:rgba(255,255,255,0.2);
+    --black-color:#000000;
+    --grey-color:rgba(128, 128, 128, 0.2);
+    --orange-color: #f3b153;
+    --blue-color: #3498db;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.black-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    display: none;
+}
+
+.container{
+    background-origin: var(--base-color);
+}
+.text-red {
+    color: var(--text-color-red);
+}
+.actionRightClickList{
+    z-index: 1000;
+}
+
+.black-background-confirmation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+.confirmation-popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
